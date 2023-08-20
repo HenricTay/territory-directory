@@ -16,7 +16,7 @@ export default function Page() {
 			password,
 		},
 	};
-	const handleSubmit = async () => {
+	const handleSubmit = () => {
 		axios(configuration)
 			.then((result) => {
 				console.log(result);
@@ -53,11 +53,7 @@ export default function Page() {
 				</Form.Group>
 
 				{/* submit button */}
-				<Button
-					variant="primary"
-					type="submit"
-					onClick={(e) => handleSubmit(e)}
-				>
+				<Button variant="primary" type="submit" onClick={(e) => handleSubmit()}>
 					Login
 				</Button>
 			</Form>
