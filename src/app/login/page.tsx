@@ -27,7 +27,7 @@ export default function Page() {
 	};
 	return (
 		<>
-			<Form onSubmit={(e) => handleSubmit(e)}>
+			<Form onSubmit={(e) => handleSubmit()}>
 				{/* email */}
 				<Form.Group controlId="formBasicEmail">
 					<Form.Label>Email address</Form.Label>
